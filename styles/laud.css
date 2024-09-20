@@ -1,0 +1,279 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+header nav ul :hover {
+    color: #e1d5d5;
+}
+
+.hero {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+    max-width: 60%;
+    margin: auto;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 28px;
+}
+
+.text-content p {
+    line-height: 1.5;
+}
+
+.image-content {
+    flex: 1;
+    align-content: center;
+}
+
+.image-content img {
+    width: 60%;
+    border-radius: 10px;
+    float:right
+}
+.flex-parent {
+    display: flex;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  
+  button.margin-right {
+    margin-right: 20px;
+  }
+
+.learn-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    background-color: #b8b1b1;
+    color: rgb(85, 65, 65);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+.videos-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    background-color: #f14e4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+.books-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    background-color: #f0733d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #c43b3b;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/* Awards Section */
+.awards {
+    padding: 50px;
+    text-align: center;
+}
+
+.awards h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.hr-lines{
+    position: relative;
+    max-width: 50%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .hr-lines:before{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: rgb(202, 195, 195);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  
+  .hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: rgb(202, 195, 195);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+.award-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.award-cards .card {
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 3px;
+    font-size:small ;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Literature Section */
+.literature {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: white;
+}
+
+.literature h2 {
+    font-size: 22px;
+}
+
+.literature-column ul {
+    padding: 0;
+}
+
+.literature-column ul li {
+    margin: 2px 0;
+    font-size: smaller;
+}
+
+/* Footer*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    color: #fff;
+    padding: 100px;
+    text-align: left;
+    font-size: smaller;
+    justify-content: space-around;
+}
+
+.footer-section1 {
+    flex: 1;
+    margin: 10px;
+    max-width: 25%;
+    border-right: 2px solid rgb(75, 72, 72); /* Line thickness and color */
+    height: 100px; /* Line height */
+}
+.footer-section2 {
+    flex: 1;
+    margin: 10px;
+    max-width: 15%;
+    border-right: 2px solid rgb(75, 72, 72); /* Line thickness and color */
+    height: 100px; /* Line height */
+}
+.footer-section3 {
+    flex: 1;
+    margin: 10px;
+    max-width: 25%;
+}
+
+/* Links styling */
+.footer-section3 a {
+    color: #4bace1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .literature {
+        flex-direction: column;
+    }
+
+    .award-cards {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
